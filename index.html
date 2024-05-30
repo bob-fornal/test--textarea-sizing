@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Textarea Test</title>
+
+    <style>
+      .textarea {
+        --padding: 10px;
+        
+        field-sizing: content;
+        line-height: 1.5;
+        padding: var(--padding);
+        padding-inline: calc((var(--padding) + calc(1lh - 1ex) / 2));
+
+        width: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="textarea" class="textarea"></textarea>
+    <script>
+      const element = document.getElementById('textarea');
+      const content = `This is a long sentence ... This is a long sentence ... This is a long sentence ... This is a long sentence ... This is a long sentence ... This is a long sentence ... This is a long sentence ... This is a long sentence ... This is a long sentence ... This is a long sentence ... This is a long sentence ... This is a long sentence ... This is a long sentence ... This is a long sentence ... This is a long sentence ... This is a long sentence ... This is a long sentence ... `;
+
+      element.innerText = content;
+    </script>
+  </body>
+</html>

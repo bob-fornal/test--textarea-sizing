@@ -1,0 +1,11 @@
+.textarea {
+  --padding: 1em;
+  
+  field-sizing: content;
+  line-height: 1.5;
+  padding: var(--padding);
+  padding-inline: calc((var(--padding) + calc(1lh - 1ex) / 2));
+
+  border-radius: 10px;
+  width: 400px;
+}
